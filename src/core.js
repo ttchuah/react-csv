@@ -52,7 +52,7 @@ export const elementOrEmpty = (element) => element || element === 0 ? element : 
 export const joiner = ((data,separator = ',') => {
   const filteredData = data.filter(e=>e);
   return filteredData.map((row, index) => row.map((element) => "\"" + elementOrEmpty(element) + "\"").join(separator)
-  ).join(`\n`);
+  ).join(`\r\n`);
 }
 );
 
@@ -65,7 +65,7 @@ export const jsons2csv = ((data, headers, separator) =>
 );
 
 export const string2csv = ((data, headers, separator) =>
-  (headers) ? `${headers.join(separator)}\n${data}`: data
+  (headers) ? `${headers.join(separator)}\r\n${data}`: data
 );
 
 export const toCSV = (data, headers, separator) => {
