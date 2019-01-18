@@ -56,6 +56,7 @@ export const joiner = ((data,separator = ',') => {
 }
 );
 
+
 export const arrays2csv = ((data, headers, separator) =>
  joiner(headers ? [headers, ...data] : data, separator)
 );
