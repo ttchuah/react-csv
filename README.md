@@ -8,6 +8,8 @@
 
 # Overview :
 
+NOTE: This is a fork of https://github.com/abdennour/react-csv meant to fix add \r\n line breaks, so that line breaks are respected in Windows Notepad.
+
 Generate a CSV file from given data.
 
 This data can be an array of arrays, an array of literal objects, or strings.
