@@ -12,6 +12,8 @@ Generate a CSV file from given data.
 
 This data can be an array of arrays, an array of literal objects, or strings.
 
+NOTE: This is a fork of another repo.
+
 # Example :
 
 ```js
